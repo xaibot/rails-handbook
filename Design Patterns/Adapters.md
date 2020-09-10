@@ -4,6 +4,8 @@ Also, if we want to replace the existing gem for API calls for some reason, we c
 
 Adapter objects are placed inside the /app/adapters/ folder.
 
+Read more about adapters [here](https://refactoring.guru/design-patterns/adapter).
+
 ## Bad solution
 
 Having API calls in controller or service objects. We are instantiating an Instagram client from the controller and keeping the token as a constant in the controller. If we have similar code scattered around as well, it will be difficult to carry out changes if we want to replace the gem, or if the API of the gem itself is changed.
